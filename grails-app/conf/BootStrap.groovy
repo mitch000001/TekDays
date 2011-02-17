@@ -1,5 +1,7 @@
 import tekdays.TekEvent
 import tekdays.TekUser
+import tekdays.Sponsorship
+import tekdays.Sponsor
 
 class BootStrap {
 
@@ -38,6 +40,47 @@ class BootStrap {
                      description: '''Join the Perl programmers of the Pork Producers
                                      of America as we hone our skills and ham it up a bit. You can show off your programming chops while trying to win a year's supply of pork chops in our programming challenge.
                                      Come and join us in historic (and aromatic), Austin, Minnesota. You'll know when you're there!''').save()
+
+        def g1 = TekEvent.findByName('Gateway Code Camp')
+        g1.addToVolunteers(new TekUser(fullName: 'Sarah Martin',
+                                       userName: 'sarah',
+                                       password: '54321',
+                                       email: 'sarah@martinworld.com',
+                                       website: 'www.martinworld.com',
+                                       bio: 'Web designer and Grails afficianado.'))
+        g1.addToVolunteers(new TekUser(fullName: 'Bill Smith',
+                                       userName: 'Mr_Bill',
+                                       password: '12345',
+                                       email: 'mrbill@email.com',
+                                       website: 'www.mrbillswebsite.com',
+                                       bio: 'Software developer, claymation artist.'))
+        g1.addToRespondents('ben@grailsmail.com' )
+        g1.addToRespondents('zachary@linuxgurus.org' )
+        g1.addToRespondents('solomon@bootstrapwelding.com' )
+
+
+        def s1 = new Sponsor(name:'Contegix', website:'contegix.com' ,
+                             description:'Beyond Managed Hosting for your Enterprise' ).save()
+
+        def s2 = new Sponsor(name:'Object Computing Incorporated', website:'ociweb.com' ,
+                             description:'An OO Software Engineering Company').save()
+
+        def sp1 = new Sponsorship(event:g1,
+                                  sponsor:s1,
+                                  contributionType:'Other' ,
+                                  description:'Cool T-Shirts')
+        def sp2 = new Sponsorship(event:g1,
+                                  sponsor:s2,
+                                  contributionType:'Venue' ,
+                                  description:'Will be paying for the Moscone')
+
+        s1.addToSponsorships(sp1)
+        s1.save()
+        s2.addToSponsorships(sp2)
+        s2.save()
+        g1.addToSponsorships(sp1)
+        g1.addToSponsorships(sp2)
+        g1.save()
 
     def destroy = {
     }
