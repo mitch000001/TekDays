@@ -63,6 +63,16 @@
                             <td valign="top" class="value"><g:link controller="tekEvent" action="show" id="${taskInstance?.event?.id}">${taskInstance?.event?.encodeAsHTML()}</g:link></td>
                             
                         </tr>
+
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                                <label for="completed">Completed</label>
+                            </td>
+                            <td valign="top">
+                                <g:checkBox name="completed" value="${taskInstance?.completed}"/>
+                            </td>
+
+                        </tr>
                     
                     </tbody>
                 </table>

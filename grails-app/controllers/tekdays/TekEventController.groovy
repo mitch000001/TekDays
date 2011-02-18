@@ -2,6 +2,8 @@ package tekdays
 
 class TekEventController {
 
+    def taskService
+
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index = {
@@ -23,6 +25,7 @@ class TekEventController {
         def tekEventInstance = new TekEvent(params)
         if (tekEventInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'tekEvent.label', default: 'TekEvent'), tekEventInstance.id])}"
+            taskService.addDefaultTasks(tekEventInstance)
             redirect(action: "show", id: tekEventInstance.id)
         }
         else {

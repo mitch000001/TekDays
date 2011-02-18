@@ -105,16 +105,16 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="sponsorships"><g:message code="tekEvent.sponsorships.label" default="Sponsorships" /></label>
+                                  <label for="sponsorships">Sponsorships:</label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: tekEventInstance, field: 'sponsorships', 'errors')}">
                                     
 <ul>
 <g:each in="${tekEventInstance?.sponsorships?}" var="s">
-    <li><g:link controller="sponsorship" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
+    <li><g:link controller="sponsorship" action="show" id="${s.id}">${s.sponsor?.encodeAsHTML()}</g:link></li>
 </g:each>
 </ul>
-<g:link controller="sponsorship" action="create" params="['tekEvent.id': tekEventInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'sponsorship.label', default: 'Sponsorship')])}</g:link>
+<g:link controller="sponsorship" action="create" params="['tekEvent.id': tekEventInstance?.id]">Add Sponsorship</g:link>
 
                                 </td>
                             </tr>
