@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef596dc4-9195-499f-8dc1-44c8a4e8e96c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/integration/tekdays/TaskServiceTests.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/tekdays/TekEventController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/tekdays/TekEventController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/tekdays/Task.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/tekdays/Task.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/task/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/task/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tekEvent/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tekEvent/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tekEvent/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tekEvent/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/tekdays/MessageController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/tekdays/MessageController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/message/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/message/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/message/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/message/list.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/tekEvent/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/tekEvent/show.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
     </list>
     <ignored path="TekDays.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,10 +71,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TekEventController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TekEventController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/tekdays/TekEventController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="57" selection-start="909" selection-end="909" vertical-scroll-proportion="0.5247148">
+            <state line="27" column="57" selection-start="909" selection-end="909" vertical-scroll-proportion="-12.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/tekdays/MessageController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="35" selection-start="674" selection-end="674" vertical-scroll-proportion="0.54545456">
               <folding />
             </state>
           </provider>
@@ -122,14 +124,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/tekdays/Message.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/tekdays/TekEvent.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/tekdays/SponsorController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/tekEvent/list.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/tekEvent/show.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/tekEvent/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/tekEvent/edit.gsp" />
         <option value="$PROJECT_DIR$/grails-app/services/tekdays/TaskService.groovy" />
@@ -138,6 +136,10 @@
         <option value="$PROJECT_DIR$/test/integration/tekdays/TaskServiceTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/tekdays/Task.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/task/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/tekEvent/show.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/tekdays/MessageController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/message/list.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/message/create.gsp" />
       </list>
     </option>
   </component>
@@ -220,6 +222,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TekDays" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TekDays" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TekDays" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TekDays" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tekdays" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,8 +523,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966273" sideWeight="0.6708286" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24957842" sideWeight="0.6708286" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24957842" sideWeight="0.67309874" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32690126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -525,40 +571,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="720" selection-end="720" vertical-scroll-proportion="0.6420664">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tekEvent/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="148" selection-start="2142" selection-end="2142" vertical-scroll-proportion="-10.363636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/tekdays/TekEvent.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="704" selection-end="704" vertical-scroll-proportion="-8.266666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/tekEvent/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="64" selection-start="3596" selection-end="3596" vertical-scroll-proportion="0.5735849">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/tekEvent/show.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="128" selection-start="4479" selection-end="4479" vertical-scroll-proportion="0.13290323">
           <folding />
         </state>
       </provider>
@@ -634,9 +649,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/tekEvent/show.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="32" selection-start="5822" selection-end="5822" vertical-scroll-proportion="0.76237625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/tekdays/TekEventController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="57" selection-start="909" selection-end="909" vertical-scroll-proportion="0.5247148">
+        <state line="27" column="57" selection-start="909" selection-end="909" vertical-scroll-proportion="-12.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/message/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="32" selection-start="2945" selection-end="2945" vertical-scroll-proportion="0.5174538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/message/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="76" selection-start="619" selection-end="619" vertical-scroll-proportion="0.28402367">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/tekdays/MessageController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="35" selection-start="674" selection-end="674" vertical-scroll-proportion="0.54545456">
           <folding />
         </state>
       </provider>
